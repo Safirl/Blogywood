@@ -82,6 +82,4 @@ test:
 
 production:
   <<: *default
-  database: blogywood_production
-  username: blogywood
-  password: <%= ENV["BLOGYWOOD_DATABASE_PASSWORD"] %>
+  url: <%= ENV["DATABASE_URL"] %>
