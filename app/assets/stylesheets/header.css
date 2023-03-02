@@ -1,7 +1,12 @@
 header {
-  /* background-color: rgb(49, 146, 146); */
+  background-color: rgb(249, 190, 99);
 }
 
+body {
+  background-color: aliceblue;
+}
+
+/* contain login and sign up */
 header .col-md-3 {
   /* background-color: aqua; */
   padding-right: 25px;
@@ -10,7 +15,7 @@ header .col-md-3 {
 .login {
   /* background-color: aqua; */
   border-radius: 7px;
-  color: green;
+  color: ;
 }
 
 .sign-up {
