@@ -19,18 +19,23 @@ header .col-md-3 {
 .btn {
   color: white ;
   background-color: #F9BE63;
+  border-color:#6E65AD;
+  --bs-btn-hover-bg:#6E65AD;
+  --bs-btn-hover-border-color: #6E65AD;
+  border-color: transparent;
 }
 
 .nav-link:hover{
   text-decoration: underline;
   color: #6E65AD;
-
 }
 
-
+.a-link:hover{
+  --bs-link-hover-color:none
+}
 
 .nav-couleur-liens:hover{
-  color: black ;
+  color: white ;
   text-decoration: underline;
   color: #6E65AD;
 
@@ -43,19 +48,31 @@ header .col-md-3 {
 .login {
   /* background-color: aqua; */
   border-radius: 7px;
-  /* color: ; */
+  color: black;
 }
 
 .sign-up {
   border-radius: 7px;
+  color: black;
 }
 
 a {
-  color: white;
+  color: black;
   text-decoration: none;
+    --bs-btn-hover-bg:none;
+    --bs-link-color:transparent;
+    --bs-btn-hover-border-color: #6E65AD;
+    border-color: transparent;
+
+
 }
 
 .logo {
   max-width: fit-content;
   padding-left: 10px;
+  border-radius: 7px;
+}
+
+img {
+  border-radius: 25px;
 }
