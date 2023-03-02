@@ -1,0 +1,18 @@
+header {
+  /* background-color: rgb(49, 146, 146); */
+}
+
+header .col-md-3 {
+  /* background-color: aqua; */
+  padding-right: 25px;
+}
+
+.login {
+  /* background-color: aqua; */
+  border-radius: 7px;
+  color: green;
+}
+
+.sign-up {
+  border-radius: 7px;
+}
