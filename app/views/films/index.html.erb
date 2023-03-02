@@ -2,13 +2,49 @@
 
 <h1>Films</h1>
 
-<div class="container liste-film">
-  <% @films.each do |film| %>
-    <%= render film %>
-
-  <% end %>
-</div>
-
 <button type="button" class="btn btn-success">
   <%= link_to "New film", new_film_path %>
 </button>
+
+<div class="container liste-film">
+  <div class="row">
+    <% @films.each_slice((@films.size / 3.0).ceil) do |films_slice| %>
+      <div class="col-md-4 film-col">
+        <% films_slice.each do |film| %>
+          <%= render film %>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const cols = document.querySelectorAll(".film-col");
+    const shortestCol = Array.from(cols).sort((a, b) => a.offsetHeight - b.offsetHeight)[0];
+
+    const form = document.getElementById("new-film-form");
+    form.addEventListener("submit", function(event) {
+      event.preventDefault();
+      const url = form.getAttribute("action");
+      const data = new FormData(form);
+      const xhr = new XMLHttpRequest();
+      xhr.open("POST", url);
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+          const newFilm = xhr.responseText;
+          let filmCol = shortestCol;
+          cols.forEach(function(col) {
+            if (col.offsetHeight < filmCol.offsetHeight) {
+              filmCol = col;
+            }
+          });
+          filmCol.insertAdjacentHTML("beforeend", newFilm);
+        }
+      };
+      xhr.send(data);
+    });
+  });
+</script>
