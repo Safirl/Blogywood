@@ -16,3 +16,8 @@ header .col-md-3 {
 .sign-up {
   border-radius: 7px;
 }
+
+a {
+  color: white;
+  text-decoration: none;
+}
