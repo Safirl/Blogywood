@@ -1,9 +1,13 @@
 header {
-  background-color: rgb(249, 190, 99);
+  background-color: #ADA676;
 }
 
 body {
-  background-color: aliceblue;
+  background-color: #FFFBE0;
+}
+
+footer {
+  /* background-color: ; */
 }
 
 /* contain login and sign up */
@@ -12,10 +16,34 @@ header .col-md-3 {
   padding-right: 25px;
 }
 
+.btn {
+  color: white ;
+  background-color: #F9BE63;
+}
+
+.nav-link:hover{
+  text-decoration: underline;
+  color: #6E65AD;
+
+}
+
+
+
+.nav-couleur-liens:hover{
+  color: black ;
+  text-decoration: underline;
+  color: #6E65AD;
+
+}
+
+.home {
+  color: black;
+}
+
 .login {
   /* background-color: aqua; */
   border-radius: 7px;
-  color: ;
+  /* color: ; */
 }
 
 .sign-up {
@@ -25,4 +53,9 @@ header .col-md-3 {
 a {
   color: white;
   text-decoration: none;
+}
+
+.logo {
+  max-width: fit-content;
+  padding-left: 10px;
 }
