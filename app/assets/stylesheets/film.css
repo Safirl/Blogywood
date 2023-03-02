@@ -1,4 +1,15 @@
+.liste-film {
+display: flex;
+flex-wrap: wrap;
+justify-content: left;
+}
+
 .carte-film {
-  background-color: aqua;
+  background-color: #edeced;
   max-width: fit-content;
+  height: fit-content;
+  border-radius: 5px;
+  padding: 20px;
+  padding-bottom: 10px;
+  margin: 20px;
 }

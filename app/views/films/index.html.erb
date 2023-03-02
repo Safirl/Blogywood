@@ -1,13 +1,11 @@
 <p style="color: green"><%= notice %></p>
 
-<div class="container">
 <h1>Films</h1>
 
+<div class="container liste-film">
   <% @films.each do |film| %>
     <%= render film %>
-    <p class="btn btn-primary">
-      <%= link_to "Show this film", film %>
-    </p>
+
   <% end %>
 </div>
 

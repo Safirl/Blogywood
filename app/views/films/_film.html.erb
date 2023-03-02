@@ -11,7 +11,7 @@
   </p>
 
   <p>
-    <strong>Image:</strong>
+    <%# <strong>Image:</strong> %>
     <img src="<%= film.image %>" alt="Test de l'image de ces grands morts" width="300px">
   </p>
 
@@ -19,4 +19,8 @@
     <strong>Rating:</strong>
     <%= film.rating %>
   </p>
+
+  <p class="btn btn-primary">
+      <%= link_to "Show this film", film %>
+    </p>
 </div>
