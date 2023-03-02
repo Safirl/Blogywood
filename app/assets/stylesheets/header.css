@@ -1,13 +1,9 @@
 header {
-  background-color: #ADA676;
+  background-color: #E9E3B2;
 }
 
 body {
   background-color: #FFFBE0;
-}
-
-footer {
-  /* background-color: ; */
 }
 
 /* contain login and sign up */
@@ -18,16 +14,14 @@ header .col-md-3 {
 
 .btn {
   color: white ;
-  background-color: #F9BE63;
-  border-color:#6E65AD;
-  --bs-btn-hover-bg:#6E65AD;
-  --bs-btn-hover-border-color: #6E65AD;
-  border-color: transparent;
+  border: none;
+  background-color: #938c61;
+  --bs-btn-hover-bg:#a39d7a;
+  --bs-btn-hover-border-color: #a39d7a;
 }
 
 .nav-link:hover{
   text-decoration: underline;
-  color: #6E65AD;
 }
 
 .a-link:hover{
@@ -38,7 +32,6 @@ header .col-md-3 {
   color: white ;
   text-decoration: underline;
   color: #6E65AD;
-
 }
 
 .home {
