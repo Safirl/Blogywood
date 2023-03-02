@@ -5,11 +5,11 @@ justify-content: left;
 }
 
 .carte-film {
-  background-color: #edeced;
+  background-color: #E9E3B2;
   max-width: fit-content;
   height: fit-content;
   border-radius: 5px;
   padding: 20px;
   padding-bottom: 10px;
-  margin: 20px;
+  margin: 5%;
 }

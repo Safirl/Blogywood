@@ -1,13 +1,15 @@
 
 <div id="<%= dom_id film %>" class="carte-film">
-  <p>
-    <strong>Title:</strong>
+  <h2>
+    <%# <strong>Title:</strong> %>
     <%= film.title %>
-  </p>
+  </h2>
 
-  <p>
+  <h4>
     <strong>Summary:</strong>
-    <%= film.summary %>
+  </h4>
+  <p>
+  <%= film.summary[0..250]%>...
   </p>
 
   <p>
@@ -15,12 +17,7 @@
     <img src="<%= film.image %>" alt="image du film" width="100%">
   </p>
 
-  <p>
-    <strong>Rating:</strong>
-    <%= film.rating %>
-  </p>
-
-  <% <p class="btn btn-primary a-link"> %>
-    <%= link_to "Show this film", film %>
-  <% </p> %>
+  <%# <p class="btn btn-primary a-link"> %>
+    <%= link_to "Show this film", film, class:'btn btn-primary' %>
+  <%# </p> %>
 </div>

@@ -2,10 +2,6 @@
 
 <h1>Films</h1>
 
-<button type="button" class="btn btn-success">
-  <%= link_to "New film", new_film_path %>
-</button>
-
 <div class="container liste-film">
   <div class="row">
     <% @films.each_slice((@films.size / 3.0).ceil) do |films_slice| %>

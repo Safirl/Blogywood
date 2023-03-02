@@ -1,6 +1,22 @@
-<p style="color: green"><%= notice %></p>
+<h1><%= @film.title %></h1>
 
-<%= render @film %>
+  <h4>
+    <strong>Summary:</strong>
+  </h4>
+  <p>
+  <%= @film.summary[0..250]%>...
+  </p>
+
+  <p>
+    <%# <strong>Image:</strong> %>
+    <img src="<%= @film.image %>" alt="image du film" width="50%">
+  </p>
+
+  <p>
+    <strong>Review:</strong>
+    <%= @film.review%>
+  </p>
+
 
 <div>
   <%= link_to "Edit this film", edit_film_path(@film) %> |
