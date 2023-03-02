@@ -1,4 +1,5 @@
-<div id="<%= dom_id film %>">
+
+<div id="<%= dom_id film %>" class="carte-film">
   <p>
     <strong>Title:</strong>
     <%= film.title %>
@@ -11,12 +12,11 @@
 
   <p>
     <strong>Image:</strong>
-    <%= film.image %>
+    <img src="<%= film.image %>" alt="Test de l'image de ces grands morts" width="300px">
   </p>
 
   <p>
     <strong>Rating:</strong>
     <%= film.rating %>
   </p>
-
 </div>
