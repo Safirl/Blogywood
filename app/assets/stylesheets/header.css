@@ -12,6 +12,8 @@ header .col-md-3 {
 h1 {
   font-family: 'Bebas Neue', cursive;
   font-size: 58px;
+  margin-right: 30px;
+  margin-bottom: 0px;
 }
 
 h2 {
