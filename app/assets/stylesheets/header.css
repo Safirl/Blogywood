@@ -36,11 +36,38 @@ p {
   font-family: 'Bebas Neue', cursive;
   font-size: 24px;
   padding-bottom: 3px;
+  margin-right: 10px;
   color: black ;
   border: none;
   background-color: #F9BE63;
-  --bs-btn-hover-bg:#6E65AD;
-  --bs-btn-hover-border-color: #6E65AD;
+  --bs-btn-hover-bg:#aba1e6;
+  --bs-btn-hover-border-color: #aba1e6;
+}
+
+.btn-danger{
+  font-family: 'Bebas Neue', cursive;
+  font-size: 24px;
+  padding-bottom: 3px;
+  margin-right: 10px;
+  color: black;
+  border: none;
+  background-color: #ff001e;
+  --bs-btn-hover-bg:#ff596c;
+  --bs-btn-hover-color: black;
+  --bs-btn-hover-border-color: #ff596c;
+}
+
+.btn-success {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 24px;
+  padding-bottom: 3px;
+  margin-right: 10px;
+  color: black;
+  border: none;
+  background-color: #3eba7a;
+  --bs-btn-hover-bg:#49df92;
+  --bs-btn-hover-color: black;
+  --bs-btn-hover-border-color: #49df92;
 }
 
 .nav-link:hover{
