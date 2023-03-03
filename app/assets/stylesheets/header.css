@@ -39,8 +39,8 @@ p {
   color: black ;
   border: none;
   background-color: #F9BE63;
-  --bs-btn-hover-bg:#c8c297;
-  --bs-btn-hover-border-color: #c8c297;
+  --bs-btn-hover-bg:#6E65AD;
+  --bs-btn-hover-border-color: #6E65AD;
 }
 
 .nav-link:hover{
@@ -48,7 +48,7 @@ p {
 }
 
 .a-link:hover{
-  --bs-link-hover-color:none
+  --bs-link-hover-color:#6E65AD;
 }
 
 .login {
