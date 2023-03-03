@@ -39,8 +39,8 @@ p {
   color: black ;
   border: none;
   background-color: #F9BE63;
-  --bs-btn-hover-bg:#6E65AD;
-  --bs-btn-hover-border-color: #6E65AD;
+  --bs-btn-hover-bg:#9188cd;
+  --bs-btn-hover-border-color: #9188cd;
 }
 
 .nav-link:hover{
@@ -48,7 +48,7 @@ p {
 }
 
 .a-link:hover{
-  --bs-link-hover-color:#6E65AD;
+  --bs-link-hover-color:#9188cd;
 }
 
 .login {
@@ -77,6 +77,11 @@ a {
   max-width: fit-content;
   padding-left: 10px;
   border-radius: 7px;
+}
+
+.logo:hover{
+  text-decoration: underline;
+  text-decoration-color: black ;
 }
 
 img {
