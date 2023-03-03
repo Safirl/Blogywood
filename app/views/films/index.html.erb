@@ -1,18 +1,17 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Films</h1>
 
-<div class="container liste-film">
-  <div class="row">
-    <% @films.each_slice((@films.size / 3.0).ceil) do |films_slice| %>
-      <div class="col-md-4 film-col">
-        <% films_slice.each do |film| %>
-          <%= render film %>
-        <% end %>
-      </div>
-    <% end %>
-  </div>
-</div>
+<%# <div class="container liste-film"> %>
+  <%# <div class="row"> %>
+    <%# <% @films.each_slice((@films.size / 3.0).ceil) do |films_slice| %> %>
+      <%# <div class="col-md-4 film-col"> %>
+        <%# <% films_slice.each do |film| %> %>
+          <%# <%= render film %> %>
+        <%# <% end %> %>
+      <%# </div> %>
+    <%# <% end %> %>
+  <%# </div> %>
+<%# </div> %>
 
 
 

@@ -3,4 +3,5 @@ class Film < ApplicationRecord
   validates :summary, presence: true, length: { minimum: 10 }
   validates :image, presence: true
   validates :rating, presence: true
+  validates :review, presence: true, length: { minimum: 10}
 end
