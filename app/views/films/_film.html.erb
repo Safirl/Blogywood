@@ -1,5 +1,7 @@
 
 <div id="<%= dom_id film %>" class="carte-film">
+  <img src="<%= film.image %>" alt="image du film" width="100%">
+  <div class="info-carte-film">
   <h2>
     <%= film.title %>
   </h2>
@@ -11,10 +13,7 @@
   <%= film.summary[0..250]%>...
   </p>
 
-  <p>
-    <%# <strong>Image:</strong> %>
-    <img src="<%= film.image %>" alt="image du film" width="100%">
-  </p>
 
   <%= link_to "Show this film", film, class:'btn btn-show' %>
+  </div>
 </div>
