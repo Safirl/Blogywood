@@ -75,7 +75,7 @@ p {
 }
 
 .a-link:hover{
-  --bs-link-hover-color:#6E65AD;
+  --bs-link-hover-color:#9188cd;
 }
 
 .login {
@@ -104,6 +104,11 @@ a {
   max-width: fit-content;
   padding-left: 10px;
   border-radius: 7px;
+}
+
+.logo:hover{
+  text-decoration: underline;
+  text-decoration-color: black ;
 }
 
 img {
