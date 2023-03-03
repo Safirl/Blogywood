@@ -1,23 +1,28 @@
 <h1><%= @film.title %></h1>
-
-  <h4>
-    <strong>Summary:</strong>
-  </h4>
-  <p>
-  <%= @film.summary[0..250]%>...
-  </p>
-
-  <p>
-    <%# <strong>Image:</strong> %>
-    <img src="<%= @film.image %>" alt="image du film" width="50%">
-  </p>
-
-  <p>
-    <strong>Review:</strong>
-    <%= @film.review%>
-  </p>
+<div class="container-show">
+  <div class="film-description">
+    <h3>
+      <strong>Summary:</strong>
+    </h3>
+    <p>
+    <%= @film.summary[0..250]%>...
+    </p>
 
 
+    <p>
+      <strong>Review:</strong>
+      <%= @film.review%>
+    </p>
+    <p>
+      <strong>Rating:</strong>
+      <%= @film.rating%>
+      / 10
+    </p>
+  </div>
+
+  <img src="<%= @film.image %>" alt="image du film" width="50%">
+
+</div>
 <div>
   <%= link_to "Edit this film", edit_film_path(@film) %> |
   <%= link_to "Back to films", films_path %>

@@ -1,0 +1,19 @@
+.container-show {
+  display: flex;
+}
+
+.film-description {
+  padding-right: 10%;
+  max-width: 50%;
+}
+
+.container-show img{
+  height: fit-content;
+}
+
+@media screen and (width: 412px) {
+  .container-show {
+    flex-wrap: wrap;
+    flex-wrap: column;
+  }
+}
